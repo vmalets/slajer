@@ -1,0 +1,27 @@
+.controls {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+
+  display: none;
+
+  width: 100%;
+  height: 50px;
+
+  color: rgba(120, 160, 222, 0.7);
+
+  font-size: 60px;
+
+  justify-content: center;
+}
+
+.control {
+  margin: 0 5%;
+
+  cursor: pointer;
+  transition: color 1s;
+  &:hover,
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}

@@ -1,0 +1,35 @@
+.indicators {
+  position: absolute;
+  z-index: 10;
+  bottom: 100px;
+
+  display: none;
+
+  width: 100%;
+
+  justify-content: center;
+}
+
+.indicator {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+  margin: 15px 4%;
+
+  cursor: pointer;
+  transition: background-color 1s;
+  transition: box-shadow 1s;
+
+  border: 2px solid rgba(120, 160, 222, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  &.active {
+    background-color: rgba(120, 160, 222, 0.7);
+  }
+  &:hover,
+  &:active {
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+  }
+}
